@@ -74,15 +74,19 @@ Visit:
 cpp
 Copy code
 http://<your-pi-ip>:5010
+Run the modern dashboard:
+
+```bash
+python scripts/ui_server.py
+```
+
 Features:
 
-Timeline of speech events
-
-Full transcripts
-
-Classification tags
-
-Search/filter by keyword, date, or category
+- Modern Bootstrap UI with most recent recording and spectrogram
+- Timeline of speech events
+- Full transcripts
+- Classification tags
+- Search/filter by keyword, date, or category
 
 Use Cases
 Language and dialect detection

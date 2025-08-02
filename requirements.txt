@@ -16,3 +16,5 @@ pytest==7.1.2
 pytest-mock==3.7.0
 suntime
 altair<5
+Flask==2.3.2
+matplotlib
