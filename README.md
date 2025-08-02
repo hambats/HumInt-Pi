@@ -57,6 +57,9 @@ nano config.ini
 
 # 4. Start the listener
 python listener.py
+
+# 5. Initialise the database
+python -m scripts.database /path/to/speech.db
 Configuration
 config.ini allows you to set:
 
@@ -67,6 +70,21 @@ Sensitivity threshold
 Enabled classification modules
 
 Data retention policy (days to keep transcripts)
+
+Database Schema
+---------------
+Speech events are stored in ``speech_events``:
+
+```
+CREATE TABLE speech_events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  timestamp TEXT,
+  transcript TEXT,
+  language TEXT,
+  keywords TEXT,
+  sentiment TEXT
+);
+```
 
 Dashboard
 Visit:
